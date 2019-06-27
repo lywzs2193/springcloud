@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ConfigServer" />
+        <module name="ServiceFeign" />
+        <module name="ConfigClient" />
+        <module name="EurekaServer" />
+        <module name="EurekaClient" />
+        <module name="ServiceRibbon" />
+        <module name="SpringCloudConfig" />
+        <module name="ServiceZuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ConfigClient" target="1.8" />
+      <module name="ConfigServer" target="1.8" />
+      <module name="EurekaClient" target="1.8" />
+      <module name="EurekaServer" target="1.8" />
+      <module name="GitConfig" target="1.5" />
+      <module name="service-ribbon" target="1.8" />
+      <module name="ServiceFeign" target="1.8" />
+      <module name="ServiceRibbon" target="1.8" />
+      <module name="ServiceZuul" target="1.8" />
+      <module name="SpringCloudConfig" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ConfigClient" options="-parameters" />
+      <module name="ConfigServer" options="-parameters" />
+      <module name="EurekaClient" options="-parameters" />
+      <module name="EurekaServer" options="-parameters" />
+      <module name="ServiceFeign" options="-parameters" />
+      <module name="ServiceRibbon" options="-parameters" />
+      <module name="ServiceZuul" options="-parameters" />
+      <module name="service-ribbon" options="-parameters" />
+    </option>
+  </component>
+</project>

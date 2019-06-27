@@ -1,0 +1,20 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lywzs2193/SpringCloudConfig/
+          searchPaths: resource
+          username: 420153588@qq.com
+          password: lyw17752863579
+      label: master
+server:
+  port: 8888
+
+
